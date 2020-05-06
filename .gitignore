@@ -1,1 +1,4 @@
 .bin/*
+.obj/*
+bin/Debug/netcoreapp2.2/NumberChecker.dll
+obj/Debug/netcoreapp2.2/*

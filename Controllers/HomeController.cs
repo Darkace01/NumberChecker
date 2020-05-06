@@ -20,6 +20,24 @@ namespace NumberChecker.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Calculator(string firstnumber, string secondnumber)
+        {
+            double sqfirst = Math.Sqrt(int.Parse(firstnumber));
+            double sqsecond = Math.Sqrt(int.Parse(secondnumber));
+            if(firstnumber.Contains("-") || secondnumber.Contains("-")){
+                ViewBag.Error = "Number is a negative number";
+            }else if(sqfirst == sqsecond){
+                ViewBag.Check = "The square root of both numbers are the same";
+            }else{
+                ViewBag.First = sqfirst;
+                ViewBag.Second = sqsecond;
+                ViewBag.F = firstnumber;
+                ViewBag.S = secondnumber;
+            }
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

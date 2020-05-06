@@ -28,3 +28,4 @@ C:\Users\Kazeem Quadri\Source\repos\startng\NumberChecker\obj\Debug\netcoreapp2.
 C:\Users\Kazeem Quadri\Source\repos\startng\NumberChecker\obj\Debug\netcoreapp2.2\NumberChecker.dll
 C:\Users\Kazeem Quadri\Source\repos\startng\NumberChecker\obj\Debug\netcoreapp2.2\NumberChecker.pdb
 C:\Users\Kazeem Quadri\Source\repos\startng\NumberChecker\obj\Debug\netcoreapp2.2\NumberChecker.csproj.CopyComplete
+C:\Users\Kazeem Quadri\Source\repos\startng\NumberChecker\obj\Debug\netcoreapp2.2\Razor\Views\Home\Calculator.g.cshtml.cs

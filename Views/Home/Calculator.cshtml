@@ -7,8 +7,9 @@ ViewData["Title"] = "Calculator";
         <div class="col-md-2">
 
         </div>
-        <div class="col-md-8 text-center">
-            <p class="text-center">Input Your Numbers</p>
+        <div class="col-md-8">
+            <div class="text-center">
+                <p class="text-center display-4">Input Your Numbers</p>
             <div class="row pb-3">
                 <div class="col-md-6">
                     <label for="firstnumber">First Number</label>
@@ -19,7 +20,25 @@ ViewData["Title"] = "Calculator";
                     <input name="secondnumber" id="secondnumber" type="number" class="form-control">
                 </div>
             </div>
-            <button class="btn btn-info btn-lg" type="submit">Submit</button>
+            <button class="btn btn-info btn-lg" type="submit">Check Numbers</button>
+            </div>
+            <div class="pt-2">
+                @{
+                if(ViewBag.First != null && ViewBag.Second != null){
+                    <p class="">The Square Root of @ViewBag.F is: @ViewBag.First</p>
+                    <p class="">The Square Root of @ViewBag.S is: @ViewBag.Second</p>
+                }
+
+                if(ViewBag.Error != null){
+                    <p class="text-danger">@ViewBag.Error</p>
+                    
+                }
+
+                if(ViewBag.Check != null){
+                    <p class="text-danger">@ViewBag.Check</p>
+                }
+            }
+            </div>
         </div>
     </div>
 </form>
