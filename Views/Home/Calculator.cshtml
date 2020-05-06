@@ -20,13 +20,16 @@ ViewData["Title"] = "Calculator";
                     <input name="secondnumber" id="secondnumber" type="number" class="form-control">
                 </div>
             </div>
-            <button class="btn btn-info btn-lg" type="submit">Check Numbers</button>
+            <button class="btn btn-outline-info btn-lg" type="submit">Check Numbers</button>
             </div>
             <div class="pt-2">
                 @{
                 if(ViewBag.First != null && ViewBag.Second != null){
-                    <p class="">The Square Root of @ViewBag.F is: @ViewBag.First</p>
-                    <p class="">The Square Root of @ViewBag.S is: @ViewBag.Second</p>
+                    if(ViewBag.First > ViewBag.Second){
+                        <p class="">The number @ViewBag.F with Square root @ViewBag.First has a higher square root than the number @ViewBag.S with square root @ViewBag.Second</p>
+                    }else{
+                        <p class="">The number @ViewBag.S with Square root @ViewBag.Second has a higher square root than the number @ViewBag.F with square root @ViewBag.First</p>
+                    }
                 }
 
                 if(ViewBag.Error != null){
