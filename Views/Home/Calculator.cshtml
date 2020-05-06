@@ -26,9 +26,9 @@ ViewData["Title"] = "Calculator";
                 @{
                 if(ViewBag.First != null && ViewBag.Second != null){
                     if(ViewBag.First > ViewBag.Second){
-                        <p class="">The number @ViewBag.F with Square root @ViewBag.First has a higher square root than the number @ViewBag.S with square root @ViewBag.Second</p>
+                        <p class="">The number <span class="text-primary">@ViewBag.F </span>with Square root <span class="text-info">@ViewBag.First</span> has a higher square root than the number <span class="text-primary">@ViewBag.S</span> with square root <span class="text-info">@ViewBag.Second</span></p>
                     }else{
-                        <p class="">The number @ViewBag.S with Square root @ViewBag.Second has a higher square root than the number @ViewBag.F with square root @ViewBag.First</p>
+                        <p class="">The number <span class="text-primary">@ViewBag.S</span> with Square root <span class="text-info">@ViewBag.Second</span> has a higher square root than the number <span class="text-primary">@ViewBag.F</span> with square root <span class="text-info">@ViewBag.First</span></p>
                     }
                 }
 
