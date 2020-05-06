@@ -1,0 +1,25 @@
+@{
+ViewData["Title"] = "Calculator";
+}
+
+<form asp-controller="Home" asp-action="Calculator" method="POST">
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8 text-center">
+            <p class="text-center">Input Your Numbers</p>
+            <div class="row pb-3">
+                <div class="col-md-6">
+                    <label for="firstnumber">First Number</label>
+                    <input name="firstnumber" id="firstnumber" type="number" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="secondnumber">Second Number</label>
+                    <input name="secondnumber" id="secondnumber" type="number" class="form-control">
+                </div>
+            </div>
+            <button class="btn btn-info btn-lg" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
